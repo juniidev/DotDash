@@ -1,0 +1,223 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark: #13111c;
+  --white: #f6f6f9;
+  --accent: #f7df1e;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--white);
+  background: var(--dark);
+}
+
+main {
+  display: grid;
+  place-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+ul li {
+  list-style: none;
+}
+
+/* --------------------------- */
+
+/* Estilo general de la barra de navegación */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark);
+  padding: 25px;
+}
+
+/* Estilo del logo */
+.navbar_logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.navbar_logo h1:hover {
+  color: var(--accent);
+  transition: all 0.4s ease;
+}
+
+/* Estilo del menú de navegación */
+.navbar_menu {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+}
+
+.navbar_menu ul {
+  list-style: none;
+}
+
+.navbar_menu li {
+  margin: 0 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.navbar_menu li a:hover {
+  text-decoration: underline;
+  color: var(--accent);
+  transition: all 0.5s ease;
+}
+
+/* ----------------------------- */
+main h1 {
+  font-size: 36px;
+  text-align: center;
+  color: var(--accent);
+}
+
+p {
+  font-size: 18px;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+textarea {
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+button {
+  background-color: var(--accent);
+  color: var(--dark);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: var(--white);
+  transition: all 0.4s ease;
+}
+
+#texto-traducido {
+  display: block;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+footer {
+  width: 95%;
+  position: fixed;
+  bottom: 0px;
+  box-sizing: border-box;
+}
+
+.footer_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px 20px 10px;
+}
+
+.footer_container-links {
+  display: none;
+}
+
+.footer_container-copy {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+/* responsive */
+
+/* Media queries para adaptarse a diferentes tamaños de pantalla */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+
+  .navbar_logo h1 {
+    font-size: 30px;
+    margin: 15px;
+  }
+
+  .navbar_menu {
+    display: none;
+  }
+
+  .navbar_menu li {
+    font-size: 16px;
+    margin: 0 5px;
+  }
+
+  main h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  textarea,
+  #texto-traducido {
+    width: 85%;
+    height: 60%;
+  }
+
+  button {
+    margin-bottom: 10px;
+  }
+
+  .footer_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer_container-links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .footer_container-links :hover {
+    text-decoration: underline;
+    color: var(--accent);
+    transition: all 0.5s ease;
+  }
+
+  .footer_container-copy {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+}

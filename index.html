@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CUSTOM METAS -->
+    <meta
+      name="description"
+      content="Traductor Morse en línea. Convierte texto en código Morse y viceversa con solo presionar un botón."
+    />
+    <meta
+      name="keywords"
+      content="traductor morse, morse, texto a morse, morse a texto, código morse"
+    />
+    <meta name="author" content="Henry Matarrita" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="es" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔁</text></svg>"
+    />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- BOX ICONS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- TITLE -->
+    <title>DotDash | Traductor Morse en línea</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar_logo">
+          <a href="index.html">
+            <h1>DotDash</h1>
+          </a>
+        </div>
+        <div class="navbar_menu">
+          <ul>
+            <li class="link">
+              <a href="https://github.com/juniidev" target="_blank"
+                >GitHub <i class="bx bxl-github"></i
+              ></a>
+            </li>
+          </ul>
+
+          <ul>
+            <li class="link">
+              <a href="https://instagram.com/_henry.jr" target="_blank"
+                >Instagram <i class="bx bxl-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>Traductor Morse</h1>
+      <p>Introduce el texto que quieras traducir:</p>
+      <textarea id="texto" rows="5" cols="50"></textarea>
+
+      <p>Texto traducido:</p>
+      <textarea id="texto-traducido" rows="5" cols="50"></textarea>
+
+      <div class="button_box">
+        <button onclick="espanolAMorse()">Texto a Morse</button>
+        <button onclick="morseAEspanol()">Morse a Texto</button>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer_container">
+        <div class="footer_container-links">
+          <ul>
+            <li class="link">
+              <a href="https://github.com/juniidev" target="_blank"
+                >GitHub <i class="bx bxl-github"></i
+              ></a>
+            </li>
+          </ul>
+
+          <ul>
+            <li class="link">
+              <a href="https://instagram.com/_henry.jr" target="_blank"
+                >Instagram <i class="bx bxl-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer_container-copy">
+          Copyright &#169; <span id="date"></span> Henry Matarrita | Junii.
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
